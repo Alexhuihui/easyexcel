@@ -1,6 +1,4 @@
-README.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
 
@@ -29,8 +27,9 @@ build/
 
 ### VS Code ###
 .vscode/
-!/mvnw.cmd
-!/mvnw
-!/easyexcel.iml
-!/.mvn/
-!/.idea/
+mvnw.cmd
+mvnw
+easyexcel.iml
+.mvn/
+.idea/
+easyexcel.iml
