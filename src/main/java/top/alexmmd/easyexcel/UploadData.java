@@ -2,20 +2,19 @@ package top.alexmmd.easyexcel;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
  * @author 汪永晖
  */
 @Data
-@Entity(name = "upload_data")
+@Entity
+@Table(name = "upload_data")
 public class UploadData {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String string;
     private Date date;
